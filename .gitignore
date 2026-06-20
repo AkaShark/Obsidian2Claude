@@ -1,0 +1,5 @@
+node_modules/
+test/_reference.mjs
+main.js
+*.map
+.DS_Store

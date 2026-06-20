@@ -1,0 +1,10 @@
+{
+	"id": "obsidian2claude",
+	"name": "Obsidian2Claude",
+	"version": "1.1.0",
+	"minAppVersion": "1.4.0",
+	"description": "Copy the current note + selected line range as a Claude Code @-mention reference (e.g. @path/to/file.md#10-20) to the clipboard via a hotkey.",
+	"author": "Sharker",
+	"authorUrl": "https://github.com/AkaShark",
+	"isDesktopOnly": false
+}

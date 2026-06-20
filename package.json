@@ -1,0 +1,30 @@
+{
+	"name": "obsidian2claude",
+	"version": "1.1.0",
+	"description": "Copy the current note + selected lines as a Claude Code @-mention reference.",
+	"main": "main.js",
+	"type": "module",
+	"scripts": {
+		"dev": "node esbuild.config.mjs",
+		"build": "tsc --noEmit --skipLibCheck && node esbuild.config.mjs production",
+		"pretest": "node esbuild.config.mjs test",
+		"test": "node --test test/*.test.mjs",
+		"deploy": "node scripts/deploy.mjs"
+	},
+	"keywords": [
+		"obsidian",
+		"obsidian-plugin",
+		"claude",
+		"claude-code"
+	],
+	"author": "Sharker",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/node": "^20.11.0",
+		"builtin-modules": "^3.3.0",
+		"esbuild": "0.20.0",
+		"obsidian": "latest",
+		"tslib": "2.6.2",
+		"typescript": "5.3.3"
+	}
+}
