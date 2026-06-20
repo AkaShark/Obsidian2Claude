@@ -14,6 +14,14 @@ Paste it into a Claude Code session (the [claudian](https://github.com/) in-vaul
 
 There's a VS Code and a JetBrains "Copy for Claude Code" — this fills the same gap for Obsidian.
 
+## Demo
+
+<!-- Record a short clip (select lines → hotkey → paste into Claude Code),
+     save it as docs/demo.gif, then uncomment the next line. -->
+<!-- ![Obsidian2Claude demo](docs/demo.gif) -->
+
+> _Demo GIF coming soon — drop a screen recording at `docs/demo.gif`._
+
 ## Installation
 
 **Via BRAT (recommended — auto-updates):**
@@ -25,6 +33,26 @@ There's a VS Code and a JetBrains "Copy for Claude Code" — this fills the same
 1. Download `main.js`, `manifest.json`, `styles.css` from the latest [release](../../releases).
 2. Drop them into `<your-vault>/.obsidian/plugins/obsidian2claude/`.
 3. Reload Obsidian, enable the plugin, bind a hotkey.
+
+## Usage
+
+1. Open a note and **select the lines** you want to reference — or just place the cursor anywhere for a whole-file reference.
+2. Press your hotkey (e.g. `⌘⇧C`), or right-click → **Copy reference for Claude Code**.
+3. A toast confirms what was copied; paste it into your Claude Code prompt.
+
+**Example** — selecting lines 10–20 of `技术/iOS/KVO 笔记.md` copies:
+
+```
+@技术/iOS/KVO 笔记.md#10-20
+```
+
+Then in Claude Code:
+
+```text
+> 帮我解释 @技术/iOS/KVO 笔记.md#10-20 这段
+```
+
+Claude reads that file (focused on lines 10–20) and answers. With nothing selected you'd instead get `@技术/iOS/KVO 笔记.md` — the whole file.
 
 ## Commands (bind a hotkey to either)
 
